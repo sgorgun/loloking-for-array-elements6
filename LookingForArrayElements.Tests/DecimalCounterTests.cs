@@ -56,9 +56,9 @@ namespace LookingForArrayElements.Tests
         public void DecimalCounter_OneOfTheRangesIsNull_ThrowArgumentNullException()
         {
             // Arrange
-            decimal[][] ranges =
+            decimal[]?[] ranges =
             {
-                new[] { 0.1m, 0.2m },
+                new decimal[] { 0.1m, 0.2m },
                 null,
             };
 
@@ -236,7 +236,7 @@ namespace LookingForArrayElements.Tests
         public void DecimalCounterWithStartIndexAndCount_OneOfTheRangesIsNull_ThrowArgumentNullException()
         {
             // Arrange
-            decimal[][] ranges =
+            decimal[]?[] ranges =
             {
                 new[] { 0.1m, 0.2m },
                 null,

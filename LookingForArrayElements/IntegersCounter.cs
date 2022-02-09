@@ -10,7 +10,7 @@ namespace LookingForArrayElements
         /// <param name="arrayToSearch">One-dimensional, zero-based <see cref="Array"/> of integers to search.</param>
         /// <param name="elementsToSearchFor">One-dimensional, zero-based <see cref="Array"/> that contains integers to search for.</param>
         /// <returns>The number of occurrences of the elements that are in <paramref name="elementsToSearchFor"/> <see cref="Array"/>.</returns>
-        public static int GetIntegersCount(int[] arrayToSearch, int[] elementsToSearchFor)
+        public static int GetIntegersCount(int[]? arrayToSearch, int[]? elementsToSearchFor)
         {
             // TODO #1. Implement the method using "for" statement.
             throw new NotImplementedException();
@@ -24,7 +24,7 @@ namespace LookingForArrayElements
         /// <param name="startIndex">The zero-based starting index of the search.</param>
         /// <param name="count">The number of elements in the section to search.</param>
         /// <returns>The number of occurrences of the elements that are in <paramref name="elementsToSearchFor"/> <see cref="Array"/>.</returns>
-        public static int GetIntegersCount(int[] arrayToSearch, int[] elementsToSearchFor, int startIndex, int count)
+        public static int GetIntegersCount(int[]? arrayToSearch, int[]? elementsToSearchFor, int startIndex, int count)
         {
             // TODO #2. Implement the method using "while" statement.
             throw new NotImplementedException();
