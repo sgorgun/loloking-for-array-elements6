@@ -30,7 +30,7 @@ namespace LookingForArrayElements
                     throw new ArgumentNullException($"The ranges[{i}] parameter cannot be null.");
                 }
 
-                if (ranges[i] != Array.Empty<decimal>() && ranges[i].Length != 2)
+                if (ranges[i] != Array.Empty<decimal>() && ranges[i]!.Length != 2)
                 {
                     throw new ArgumentException($"The ranges[{i}] array must have exactly two elements.");
                 }
@@ -98,7 +98,7 @@ namespace LookingForArrayElements
                     throw new ArgumentNullException($"The ranges[{i}] parameter cannot be null.");
                 }
 
-                if (ranges[i] != Array.Empty<decimal>() && ranges[i].Length != 2)
+                if (ranges[i] != Array.Empty<decimal>() && ranges[i]!.Length != 2)
                 {
                     throw new ArgumentException($"The ranges[{i}] array must have exactly two elements.");
                 }
@@ -129,8 +129,7 @@ namespace LookingForArrayElements
             {
                 for (int j = 0; j < ranges.Length; j++)
                 {
-                    if (ranges[j] != Array.Empty<decimal>() && arrayToSearch[i] >= ranges[j][0] &&
-                        arrayToSearch[i] <= ranges[j][1])
+                    if (ranges[j] != Array.Empty<decimal>() && arrayToSearch[i] >= ranges[j]![0] && arrayToSearch[i] <= ranges[j]![1])
                     {
                         result++;
                         break;

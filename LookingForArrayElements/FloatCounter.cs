@@ -37,7 +37,7 @@ namespace LookingForArrayElements
             {
                 if (rangeStart[n] > rangeEnd[n])
                 {
-                    throw new ArgumentException(nameof(rangeStart));
+                    throw new ArgumentException("The rangeStart array must be less than or equal to the rangeEnd array.", nameof(rangeStart));
                 }
             }
 
@@ -131,7 +131,7 @@ namespace LookingForArrayElements
             {
                 if (rangeStart[n] > rangeEnd[n])
                 {
-                    throw new ArgumentException(nameof(rangeStart));
+                    throw new ArgumentException(null, nameof(rangeStart));
                 }
             }
 
